@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Page</title>
+<body>
+    <div class="container">
+         <img src="" alt="Logo" width="100">
+        <h2>LOGIN</h2>
+        <form id="loginForm" action="" method="post">
+            <label for="username">Enter Username:</label><br>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="password">Enter Password:</label><br>
+            <input type="password" id="password" name="password" required><br>
+
+             <input type="checkbox" id="rememberMe" name="rememberMe">
+            <label for="rememberMe">Remember Me</label><br>
+
+            <br><input type="submit" value="Login">
+
+            <div class="">
+                <a href="registration.html">New Member? Sign In.</a>
+            </div>
+        </form>
+        <div id="error" class="error" style="display: none;"><br><br>Incorrect username or password. Please try again.</div>
+    </div>
