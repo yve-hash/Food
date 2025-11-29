@@ -5,25 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Login Page</title>
+</head>
 <body>
+    <script src="script.js"></script>
     <div class="container">
-         <img src="" alt="Logo" width="100">
-        <h2>LOGIN</h2>
-        <form id="loginForm" action="" method="post">
-            <label for="username">Enter Username:</label><br>
-            <input type="text" id="username" name="username" required><br><br>
+        <div class="logo-section">
+            <img src="logo.png" alt="Company Logo" width="100">
+        </div>
 
-            <label for="password">Enter Password:</label><br>
-            <input type="password" id="password" name="password" required><br>
+        <h2>Log In</h2>
 
-             <input type="checkbox" id="rememberMe" name="rememberMe">
-            <label for="rememberMe">Remember Me</label><br>
+        <form id="loginForm" action="#" method="post">
+            
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required aria-label="Username">
+            </div>
 
-            <br><input type="submit" value="Login">
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required aria-label="Password">
+            </div>
 
-            <div class="">
-                <a href="registration.html">New Member? Sign In.</a>
+            <div class="aux-group">
+                <div class="remember-me">
+                    <input type="checkbox" id="rememberMe" name="rememberMe">
+                    <label for="rememberMe">Remember Me</label>
+                </div>
+                </div>
+
+            <button type="submit" class="submit-button">Login</button>
+
+            <div id="error-message" class="error-message" role="alert" style="display: none;">
+                Incorrect username or password. Please try again.
+            </div>
+
+            <div class="register-link">
+                <p>New Member? <a href="registration.html">Sign Up here.</a></p>
             </div>
         </form>
-        <div id="error" class="error" style="display: none;"><br><br>Incorrect username or password. Please try again.</div>
     </div>
+    <script src="script.js"></script>
+</body>
+</html>
