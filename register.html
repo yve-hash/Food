@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Register</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">MyCompany</div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="login-container"> 
+            
+            <div class="logo-section">
+                <img src="logo.png" alt="Logo" width="100"> 
+            </div>
+
+            <h2 class="form-title">Register</h2>
+            <p>Create your new account.</p>
+
+            <form id="registrationForm" action="homepage.html" method="post">
+                
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                    <div id="usernameError" class="error"></div>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    <div id="passwordError" class="error"></div>
+                </div>
+
+                <div class="input-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    <div id="confirmPasswordError" class="error"></div>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <div id="emailError" class="error"></div>
+                </div>
+
+                <button type="submit" class="submit-button">Register</button> 
+
+                <div class="register-link have-account">
+                    <p><a href="login.html">Already have an account? Log In</a></p>
+                </div>
+                
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 MyCompany. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -6,45 +6,64 @@
     <link rel="stylesheet" href="style.css">
     <title>Login Page</title>
 </head>
+
 <body>
-    <script src="script.js"></script>
-    <div class="container">
-        <div class="logo-section">
-            <img src="logo.png" alt="Company Logo" width="100">
+
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">MyCompany</div>
         </div>
+    </header>
 
-        <h2>Log In</h2>
+    <section class="hero">
+        <div class="login-container">
 
-        <form id="loginForm" action="#" method="post">
-            
-            <div class="input-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required aria-label="Username">
+            <div class="logo-section">
+                <img src="logo.png" alt="Company Logo" width="100">
             </div>
 
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required aria-label="Password">
-            </div>
+            <h2>Log In</h2>
+            <p>Please enter your account details.</p>
 
-            <div class="aux-group">
-                <div class="remember-me">
-                    <input type="checkbox" id="rememberMe" name="rememberMe">
-                    <label for="rememberMe">Remember Me</label>
-                </div>
+            <form id="loginForm" action="homepage.html" method="post">
+
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
                 </div>
 
-            <button type="submit" class="submit-button">Login</button>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
 
-            <div id="error-message" class="error-message" role="alert" style="display: none;">
-                Incorrect username or password. Please try again.
-            </div>
+                <div class="aux-group">
+                    <div class="remember-me">
+                        <input type="checkbox" id="rememberMe" name="rememberMe">
+                        <label for="rememberMe">Remember Me</label>
+                    </div>
+                </div>
 
-            <div class="register-link">
-                <p>New Member? <a href="registration.html">Sign Up here.</a></p>
-            </div>
-        </form>
-    </div>
+                <button type="submit" class="submit-button">Login</button>
+
+                <div id="error-message" class="error-message" style="display: none;">
+                    Incorrect username or password.
+                </div>
+
+                <div class="register-link">
+                    <p>Don't have an account? <a href="#">Register</a></p>
+                </div>
+
+            </form>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 MyCompany. All rights reserved.</p>
+    </footer>
+
     <script src="script.js"></script>
+
 </body>
 </html>
