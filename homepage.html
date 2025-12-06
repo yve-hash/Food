@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>(website) Home</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Pinoy Delights Home</title>
+  <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
 
   <header class="header">
     <div class="container header-content">
-      <h1 class="logo">(company)</h1>
+      <h1 class="logo">Pinoy Delights</h1>
       <nav>
         <ul class="nav-links">
-          <li><a href="homepage.html" class="active">homepage</a></li>
-          <li><a href=".html">(page 2)</a></li>
-          <li><a href=".html">(page 3)</a></li>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -24,32 +24,31 @@
 
   <section id="hero" class="hero">
     <div class="container hero-content">
-      <h2>Welcome to (company)</h2>
-      <p>(motto)</p>
-      <button class="btn">(space)</button>
+      <h2>Welcome to Pinoy Delights</h2>
+    <p>Discover the flavors of the Philippines!</p>
+    <button class="btn" onclick="location.href='#menu'">View the Menu</button>
     </div>
   </section>
+<section id="features" class="features container">
+  <h2 class="section-title">Why You Should Visit Our Website</h2>
 
-  <section id="features" class="features container">
-    <h2 class="section-title">Why You'll Love Us</h2>
-
-    <div class="feature-grid">
-      <div class="feature-box">
-        <h3>(space)</h3>
-        <p>(space)</p>
-      </div>
-
-      <div class="feature-box">
-        <h3>(space)</h3>
-        <p>(space)</p>
-      </div>
-
-      <div class="feature-box">
-        <h3>(space)</h3>
-        <p>(space)</p>
-      </div>
+  <div class="feature-grid">
+    <div class="feature-box">
+      <h3>Wide Menu</h3>
+      <p>Here you can find various types of Filipino foods, from classic dishes to street food favorites.</p>
     </div>
-  </section>
+
+    <div class="feature-box">
+      <h3>Easy to Browse</h3>
+      <p>The website has a clear and simple layout so you can quickly find the dishes you want and see their ingredients and recipes.</p>
+    </div>
+
+    <div class="feature-box">
+      <h3>Food Inspiration</h3>
+      <p>Perfect for those looking for a new dish to cook or try, and for lovers of Filipino cuisine.</p>
+    </div>
+  </div>
+</section>
 
   <section id="reviews" class="reviews">
     <div class="container">
@@ -57,21 +56,170 @@
 
       <div class="review-grid">
         <article class="review-box">
-          <h4>(space)</h4>
-          <p>(space)</p>
+          <h4>Maria Santos</h4>
+          <p>"Pinoy Delights brings me back home with every bite! Truly authentic Filipino flavors."</p>
         </article>
 
         <article class="review-box">
-          <h4>(space)</h4>
-          <p>(space)</p>
+          <h4>Juan Dela Cruz</h4>
+          <p>"Amazing food, great service, and a cozy ambiance. Highly recommended for Filipino cuisine lovers."</p>
         </article>
       </div>
     </div>
   </section>
 
+<section id="menu">
+    <h1 class="menu-title">Filipino Food Menu</h1>
+
+    <div class="menu-categories">
+        <a href="#pork" class="category" style="background-image: url('images/pork.jpg');">Pork</a>
+        <a href="#chicken" class="category" style="background-image: url('images/chicken.jpg');">Chicken</a>
+        <a href="#vegetables" class="category" style="background-image: url('images/vegetables.jpg');">Vegetables</a>
+        <a href="#dessert" class="category" style="background-image: url('images/dessert.jpg');">Desserts</a>
+        <a href="#drinks" class="category" style="background-image: url('images/drinks.jpg');">Drinks</a>
+        <a href="#street" class="category" style="background-image: url('images/street.jpg');">Street Food</a>
+    </div>
+
+    <div id="pork" class="menu-section">
+        <div class="popup-content">
+            <a href="#menu" class="back-btn">&times;</a>
+            <h2>Pork Dishes</h2>
+            <div class="recipe-card">
+                <h3>Pork Adobo</h3>
+                <img src="images/adobo-pork.jpg" alt="Pork Adobo">
+                <p>Classic Filipino pork stew with soy sauce, vinegar, garlic, and bay leaves.</p>
+            </div>
+            <div class="recipe-card">
+                <h3>Pork Sinigang</h3>
+                <img src="images/sinigang-pork.jpg" alt="Pork Sinigang">
+                <p>Sour tamarind-based soup with pork and fresh vegetables.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="chicken" class="menu-section">
+        <div class="popup-content">
+            <a href="#menu" class="back-btn">&times;</a>
+            <h2>Chicken Dishes</h2>
+            <div class="recipe-card">
+                <h3>Chicken Adobo</h3>
+                <img src="images/adobo-chicken.jpg" alt="Chicken Adobo">
+                <p>Tender chicken cooked in vinegar, soy sauce, garlic, and spices.</p>
+            </div>
+            <div class="recipe-card">
+                <h3>Chicken Inasal</h3>
+                <img src="images/inasal.jpg" alt="Chicken Inasal">
+                <p>Grilled chicken marinated in calamansi, vinegar, and annatto for a smoky flavor.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="vegetables" class="menu-section">
+        <div class="popup-content">
+            <a href="#menu" class="back-btn">&times;</a>
+            <h2>Vegetable Dishes</h2>
+            <div class="recipe-card">
+                <h3>Laing</h3>
+                <img src="images/laing.jpg" alt="Laing">
+                <p>Taro leaves cooked in coconut milk with chili and shrimp paste.</p>
+            </div>
+            <div class="recipe-card">
+                <h3>Gising-Gising</h3>
+                <img src="images/gising-gising.jpg" alt="Gising-Gising">
+                <p>Spicy green bean dish cooked in coconut milk with ground meat.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="dessert" class="menu-section">
+        <div class="popup-content">
+            <a href="#menu" class="back-btn">&times;</a>
+            <h2>Desserts</h2>
+            <div class="recipe-card">
+                <h3>Halo-Halo</h3>
+                <img src="images/halo-halo.jpg" alt="Halo-Halo">
+                <p>Sweet shaved ice dessert with mixed fruits, beans, and milk.</p>
+            </div>
+            <div class="recipe-card">
+                <h3>Leche Flan</h3>
+                <img src="images/leche-flan.jpg" alt="Leche Flan">
+                <p>Creamy caramel custard dessert, a Filipino favorite.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="drinks" class="menu-section">
+        <div class="popup-content">
+            <a href="#menu" class="back-btn">&times;</a>
+            <h2>Drinks</h2>
+            <div class="recipe-card">
+                <h3>Buko Juice</h3>
+                <img src="images/buko-juice.jpg" alt="Buko Juice">
+                <p>Fresh coconut water served chilled, a refreshing tropical drink.</p>
+            </div>
+            <div class="recipe-card">
+                <h3>Calamansi Juice</h3>
+                <img src="images/calamansi-juice.jpg" alt="Calamansi Juice">
+                <p>Sour and sweet Filipino citrus drink, perfect for hot days.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="street" class="menu-section">
+        <div class="popup-content">
+            <a href="#menu" class="back-btn">&times;</a>
+            <h2>Street Food</h2>
+            <div class="recipe-card">
+                <h3>Isaw</h3>
+                <img src="images/isaw.jpg" alt="Isaw">
+                <p>Grilled chicken intestines, a popular Filipino street food snack.</p>
+            </div>
+            <div class="recipe-card">
+                <h3>Balut</h3>
+                <img src="images/balut.jpg" alt="Balut">
+                <p>Boiled fertilized duck egg, a traditional street delicacy.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>If you have questions, suggestions, or just want to say hi, fill out the form below!</p>
+
+      <div class="contact-container">
+        <form action="#" method="POST" class="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" placeholder="Subject" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+          <h2>Our Contact Info</h2>
+          <p><strong>Email:</strong> filipinofood@example.com</p>
+          <p><strong>Phone:</strong> +63 912 345 6789</p>
+          <p><strong>Address:</strong> 123 Food Street, Manila, Philippines</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <footer class="footer">
-    <p>(space)</p>
+    <p>&copy; 2025 Pinoy Delights. All Rights Reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
