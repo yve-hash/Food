@@ -91,7 +91,6 @@ const handleHeroButton = () => {
 };
 
 
-// Execute all handlers when the page content is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
     handleMenuPopups();
     handleContactForm();
